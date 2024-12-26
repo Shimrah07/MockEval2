@@ -1,3 +1,30 @@
+<!-- 2. quiz.html (Quiz Management Page)
+Contains a form to add a new quiz question with the following fields:
+Question Statement (text input)
+Option A, Option B, Option C, Option D (text inputs)
+Correct Option (text input or dropdown)
+
+Upon submission:
+Send a POST request to the JSON server to add the question.
+Display an alert: "Question Created".
+
+Display questions in a grid layout:
+Fetch and display all questions using a GET request.
+Each question should be displayed in a card format with:
+A blue border (for unreviewed questions).
+Two buttons:
+Review Question:
+On click, show a confirmation dialog: "Are you sure to review the question?".
+If confirmed:
+Update the question’s reviewStatus to true using a PATCH request.
+Re-render the UI with the question card border changed to violet.
+Delete Question:
+On click, show a confirmation dialog: "Are you sure to delete?".
+If confirmed:
+Delete the question using a DELETE request.
+Re-render the remaining questions.
+ -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +35,23 @@
 <link rel="stylesheet" href="./styles/index.css">
 
 <body>
+    <!-- navbar -->
     <div id="nav"></div>
+
+    <!-- quiz question -->
+     <h2>Quiz</h2>
+    <form action="" id="form">
+        <input type="text" placeholder="Enter Quiz">
+        <select name="" id="mcq">
+            <option value="A">Option A</option>
+            <option value="B">Option B</option>
+            <option value="C">Option C</option>
+            <option value="D">Option D</option>
+        </select>
+        <input type="submit" name="" id="quizbtn" value="Submit">
+    </form>
+
+
 </body>
 <script src="./scripts/quiz.js" type="module"></script>
 <script src="./scripts/navbar.js" type="module"></script>
