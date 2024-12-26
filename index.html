@@ -1,0 +1,39 @@
+<!-- 1. index.html (Login Page)
+Contains a login form with:
+Two input fields: Email and Password
+Upon form submission:
+Validate the credentials:
+Email: empher@gmail.com
+Password: empher@123
+If credentials are correct:
+Display an alert: "Login Success, you are redirecting to quiz page".
+Redirect the user to quiz.html using window.location.href.
+If credentials are incorrect, display an appropriate error message. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Quiz App</title>
+</head>
+<link rel="stylesheet" href="./styles/index.css">
+<body>
+    <!-- navbar -->
+    <div id="nav"></div>
+
+    <!-- login page -->
+    <h2>Please Log In</h2>
+    <form action="" id="form">
+        <input id="email" type="email" placeholder="Enter E-Mail">
+        <input id="password" type="password" placeholder="Enter Password">
+        <input id="btn" type="submit" value="Log In" >
+    </form>
+
+
+</body>
+<script src="./scripts/index.js" type="module"></script>
+<script src="./scripts/navbar.js" type= "module"></script>
+<script src="./scripts/baseurl.js" type="module"></script>
+
+</html>
