@@ -27,11 +27,16 @@ try{
     let data = await res.json();
     console.log(data);
 
-    data.map((el) => {
-        if(el.email == email && el.password == password)
-        alert("Login Success, you are redirecting to quiz page")
-        window.location.href = "quiz.html"
+    data.forEach((el) => {
+        if(el.email == email && el.password == password){
+            alert("Login Success, you are redirecting to quiz page")
+            window.location.href = "quiz.html"
+        }
+        else{
+            alert("User not registered!");
+        }
     })
+        
 
 }catch(err){
     console.log(err);

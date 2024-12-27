@@ -33,16 +33,23 @@ Re-render the remaining questions.
     <title>Quiz</title>
 </head>
 <link rel="stylesheet" href="./styles/index.css">
+<link rel="stylesheet" href="./styles/quiz.css">
 
 <body>
     <!-- navbar -->
     <div id="nav"></div>
 
     <!-- quiz question -->
-     <h2>Quiz</h2>
+     <h2>Quiz Question</h2>
     <form action="" id="form">
-        <input type="text" placeholder="Enter Quiz">
+
+        <input type="text" placeholder="Enter Quiz Question" id="ques">
+        <input type="text" placeholder="Enter Option A" id="opA">
+        <input type="text" placeholder="Enter Option B" id="opB">
+        <input type="text" placeholder="Enter Option C" id="opC">
+        <input type="text" placeholder="Enter Option D" id="opD">
         <select name="" id="mcq">
+            <option value="">Select The Right Option</option>
             <option value="A">Option A</option>
             <option value="B">Option B</option>
             <option value="C">Option C</option>
@@ -50,12 +57,15 @@ Re-render the remaining questions.
         </select>
         <input type="submit" name="" id="quizbtn" value="Submit">
     </form>
+    <button id="showBtn">Show Quiz</button>
+    <div id="cont">
+        
+    </div>
 
 
 </body>
 <script src="./scripts/quiz.js" type="module"></script>
 <script src="./scripts/navbar.js" type="module"></script>
-<script src="./scripts/baseurl.js" type="module"></script>
-
 
 </html>
+

@@ -1,0 +1,55 @@
+form{
+    text-align: center;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    gap: 2rem;
+    padding: 1rem;
+    margin: auto;
+    background-color: black;
+    color: gold;
+}
+input, select{
+    color: goldenrod;
+    padding: 1rem;
+}
+h2{
+    text-align: center;
+    font-size: 2rem;
+}
+
+#quizbtn, #btn{
+    color: black;
+    background-color: goldenrod;
+}
+
+#cont{
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin: auto;
+}
+
+#cont > div{
+    border: 2px solid black;
+    background-color: rgb(255, 228, 196);
+    width: 250px;
+    height: auto;
+    text-align: center;
+    border-radius: 20px;
+    margin: auto;
+
+}
+
+#showBtn{
+    margin: 10px;
+    color: goldenrod;
+    background-color: black;
+    border-radius: 10px;
+    font-size: 2rem;
+    padding: 10px;
+    border: none;
+
+}

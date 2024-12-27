@@ -18,28 +18,3 @@
     font-size: 2rem;
 }
 
-form{
-    text-align: center;
-    font-size: 3rem;
-    display: flex;
-    flex-direction: column;
-    width: 30%;
-    gap: 2rem;
-    padding: 1rem;
-    margin: auto;
-    background-color: black;
-    color: gold;
-}
-input{
-    color: goldenrod;
-    padding: 1rem;
-}
-h2{
-    text-align: center;
-    font-size: 2rem;
-}
-
-#quizbtn, #btn{
-    color: black;
-    background-color: goldenrod;
-}
